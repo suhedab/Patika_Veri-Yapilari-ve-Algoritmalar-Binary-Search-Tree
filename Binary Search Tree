@@ -1,0 +1,16 @@
+Binary Search Tree 
+
+Verilen dizi: [7, 5, 1, 8, 3, 6, 0, 9, 4, 2]
+
+1. Adım: İlk eleman olan 7, kök olarak belirlenir.          [root: 7]
+2. Adım: 5, 7'den küçük olduğu için 7'nin soluna eklenir.   [root: 7, sol: 5]
+3. Adım: 1, 7'den küçük olduğu için 7'nin soluna eklenir.   (1<5)  [root: 7, sol: 5, solun solu: 1]
+4. Adım: 8, 7'den büyük olduğu için 7'nin sağına eklenir.   [root: 7, sol: 5, solun solu: 1, sağ: 8]
+5. Adım: Yukarıdaki işlemlere devam edelim:                 (3<5 , 3>1) [root: 7, sol: 5, solun solu: 1, solun sağı: 3, sağ: 8]
+6. Adım:  [root: 7, sol: 5, solun solu: 1, solun sağı: 3, solun sağından sağ: 6, sağ: 8]
+7. Adım:  [root: 7, sol: 5, solun solu: 1, solun solu: 0, solun sağı: 3, solun sağından sağ: 6, sağ: 8]
+8. Adım:  [root: 7, sol: 5, solun solu: 1, solun solu: 0, solun sağı: 3, solun sağından sağ: 6, sağ: 8, sağın sağı: 9]
+9. Adım:  [root: 7, sol: 5, solun solu: 1, solun solu: 0, solun sağı: 3, solun sağından sağ: 6, solun solundan sağ: 4, sağ: 8, sağın sağı: 9]
+10.Adım:  [root: 7, sol: 5, solun solu: 1, solun solu: 0, solun sağı: 3, solun sağından sol: 2, solun sağından sağ: 6, solun solundan sağ: 4, sağ: 8, sağın sağı: 9]
+
+Bu şekilde verilen dizi, Binary Search Tree (BST) ağacına eklendi.
